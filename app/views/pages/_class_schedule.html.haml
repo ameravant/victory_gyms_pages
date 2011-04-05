@@ -1,6 +1,6 @@
 %ul.class-schedule
   %li
-    =render :partial => "events/day_schedule", :locals => {:events => Event.find_for_days_from_now(0), :title => "Today's Schedule - #{1.day.from_now.strftime('%b %d')}"}
+    =render :partial => "events/day_schedule", :locals => {:events => Event.find_for_days_from_now(0), :title => "Today's Schedule - #{0.day.from_now.strftime('%b %d')}"}
   %li                                                                                                
     =render :partial => "events/day_schedule", :locals => {:events => Event.find_for_days_from_now(1), :title => "#{1.day.from_now.strftime('%A')}'s Schedule - #{1.day.from_now.strftime('%b %d')}"}
   %li                                                                                                
